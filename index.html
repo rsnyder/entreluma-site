@@ -1,10 +1,18 @@
 ---
 layout: home
+seo_title: Entreluma — Interactive storytelling with Markdown
 ---
 
 {% if paginator and paginator.page == 1 %}
-<h1>Stories woven together</h1>
-<p>Entreluma helps you publish interactive stories that bring words, images, maps, and sources into conversation. Write in Markdown, add viewers, and connect your prose to the details readers can explore.</p>
-<p>Start with the example below, read the <a href="{{ '/admin/' | relative_url }}">author guide</a>, or <a href="https://github.com/rsnyder/entreluma/generate">create your own site from the template</a>.</p>
+<h1>Interactive storytelling with Markdown</h1>
+<p>Entreluma helps you weave words, images, maps, video, and sources into stories readers can explore. Publish a static website on GitHub Pages, with your content in a repository you control.</p>
+<p><a href="https://github.com/rsnyder/entreluma/generate">Create your site</a> · <a href="{{ '/getting-started/' | relative_url }}">Get started</a> · <a href="{{ '/monument-valley/' | relative_url }}">Explore an example</a></p>
+<h2>Connect the story to the details</h2>
+<p>Let readers zoom into an image, follow a place on a map, compare two views, or jump to a moment in a video. Links in your prose can guide these viewers, keeping the evidence close to the narrative.</p>
+<h2>A publishing workflow you can make your own</h2>
+<p>Write in Markdown, keep your media alongside your stories, and publish through GitHub Actions. Entreluma adds interactive viewers to the Chirpy Jekyll theme. Use it for visual essays, place-based stories, teaching materials, and research narratives.</p>
+<h2>An optional browser editor</h2>
+<p>The <a href="https://editor.entreluma.org">Entreluma Editor</a> offers Markdown editing, live preview, local story packages, and GitHub sync. You can also use a text editor or GitHub’s web interface; the publishing template works independently of the editor.</p>
+<h2>See Entreluma in action</h2>
 {% include featured_posts.html %}
 {% endif %}

@@ -6,12 +6,12 @@
 url: ""
 baseurl: ""
 
-title: Entreluma # the main title
+title: Entreluma
 
-tagline: Weave words, images, maps, and sources. # it will display as the subtitle
+tagline: Weave words, images, maps, and sources.
 
 description: >- # used by seo meta and the atom feed
-  Publish interactive stories that weave together words, images, maps, and sources.
+  Create interactive stories with Markdown, zoomable images, maps, video, and linked sources. Publish your own site on GitHub Pages with Entreluma.
 
 # the avatar on sidebar, support local or CORS resources
 avatar: /assets/img/logo.png
@@ -33,21 +33,12 @@ timezone:
 # Import the theme
 theme: jekyll-theme-chirpy
 
-twitter:
-  username: # change to your Twitter username
-
+# Optional public identity. Leave unused fields empty; do not add example accounts.
 social:
-  # Change to your full name.
-  # It will be displayed as the default author of the posts and the copyright owner in the Footer
-  name: Your Name
-  email: example@domain.com # change to your email address
+  name: Entreluma
+  email:
   links:
-    # The first element serves as the copyright owner's link
-    - https://twitter.com/username # change to your Twitter homepage
-    - https://github.com/username # change to your GitHub homepage
-    # Uncomment below to add more social links
-    # - https://www.facebook.com/username
-    # - https://www.linkedin.com/in/username
+    - https://github.com/rsnyder/entreluma
 
 # Site Verification Settings
 webmaster_verifications:
@@ -104,7 +95,7 @@ cdn:
 
 # The URL of the site-wide social preview image used in SEO `og:image` meta tag.
 # It can be overridden by a customized `page.image` in front matter.
-social_preview_image: # string, local or CORS resources
+social_preview_image: /assets/img/entreluma-social.png
 
 # boolean type, the global switch for TOC in posts.
 toc: true
@@ -174,6 +165,10 @@ collections:
     sort_by: order
 
 defaults:
+  - scope:
+      path: "assets/components"
+    values:
+      sitemap: false
   - scope:
       path: "" # An empty string here means all files in the project
       type: posts
