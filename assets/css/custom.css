@@ -14,12 +14,3 @@
 #sidebar #avatar img:hover {
   transform: none;
 }
-
-.entreluma-home-logo {
-  display: block;
-  width: min(15rem, 100%);
-  height: auto;
-  margin: 0 0 1.5rem;
-  background: #fff;
-  border-radius: 1rem;
-}
