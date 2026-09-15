@@ -4,6 +4,8 @@ The promotional site at https://entreluma.org, created from [rsnyder/entreluma](
 
 Use **rsnyder/entreluma** to create a new storytelling site. Do not use this promotional repository as your template. The optional editor is maintained in [rsnyder/entreluma-editor](https://github.com/rsnyder/entreluma-editor).
 
+The homepage introduces the framework, while `/examples/` renders the site's `_posts` collection with the standard Entreluma post index. This separation uses the same layouts and includes shipped by the template; only the project copy and `assets/css/custom.css` are site-specific.
+
 ## Publishing
 
 GitHub Actions builds Jekyll and deploys to GitHub Pages. The custom domain is configured in this repository’s Pages settings. The workflow derives deployment URL and repository identity from those settings. No domain change is needed in Cloudflare when moving between repositories owned by rsnyder.

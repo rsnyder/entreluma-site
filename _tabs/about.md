@@ -1,10 +1,14 @@
 ---
 icon: fas fa-info-circle
-order: 4
+order: 5
 description: About Entreluma, an open-source publishing template for interactive visual stories, created by Ron Snyder.
 ---
 
 Entreluma is an open-source project by [Ron Snyder](https://github.com/rsnyder) for publishing stories that connect prose with images, maps, video, and sources. It is designed for people who want to explain a place, examine an image, share research, or build a visual narrative while keeping their content in Markdown.
+
+## About the name
+
+Entreluma is a coined name combining the idea of interlacing with “luma,” suggesting light and imagery. It reflects how the platform weaves words, images, maps, and sources into connected stories that illuminate a subject. Pronounced **en-treh-LOO-ma**, the name evokes both the craft of storytelling and the discovery that comes from bringing different perspectives together.
 
 ## Where it comes from
 

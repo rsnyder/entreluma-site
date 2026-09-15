@@ -1,18 +1,117 @@
 ---
 layout: home
 seo_title: Entreluma — Interactive storytelling with Markdown
+show_posts: false
 ---
 
-{% if paginator and paginator.page == 1 %}
-<h1>Interactive storytelling with Markdown</h1>
-<p>Entreluma helps you weave words, images, maps, video, and sources into stories readers can explore. Publish a static website on GitHub Pages, with your content in a repository you control.</p>
-<p><a href="https://github.com/rsnyder/entreluma/generate">Create your site</a> · <a href="{{ '/getting-started/' | relative_url }}">Get started</a> · <a href="{{ '/monument-valley/' | relative_url }}">Explore an example</a></p>
-<h2>Connect the story to the details</h2>
-<p>Let readers zoom into an image, follow a place on a map, compare two views, or jump to a moment in a video. Links in your prose can guide these viewers, keeping the evidence close to the narrative.</p>
-<h2>A publishing workflow you can make your own</h2>
-<p>Write in Markdown, keep your media alongside your stories, and publish through GitHub Actions. Entreluma adds interactive viewers to the Chirpy Jekyll theme. Use it for visual essays, place-based stories, teaching materials, and research narratives.</p>
-<h2>An optional browser editor</h2>
-<p>The <a href="https://editor.entreluma.org">Entreluma Editor</a> offers Markdown editing, live preview, local story packages, and GitHub sync. You can also use a text editor or GitHub’s web interface; the publishing template works independently of the editor.</p>
-<h2>See Entreluma in action</h2>
-{% include featured_posts.html %}
-{% endif %}
+<section class="project-intro">
+  <p class="project-kicker">Interactive storytelling with Markdown</p>
+  <h1>Connect the story to the details.</h1>
+  <p class="project-lede">Entreluma is a free, open-source framework for weaving words, images, maps, video, and sources into stories readers can explore. It favors simple, durable publishing and keeps the content in a project you control.</p>
+  <p class="project-actions">
+    <a class="project-action project-action-primary" href="{{ '/getting-started/' | relative_url }}">Get started</a>
+  </p>
+</section>
+
+<section class="project-capabilities" aria-label="What Entreluma adds to a story">
+  <article>
+    <i class="fa-regular fa-image" aria-hidden="true"></i>
+    <h2>Look closer</h2>
+    <p>Guide readers to a revealing detail inside an image or compare two views.</p>
+  </article>
+  <article>
+    <i class="fa-solid fa-map-location-dot" aria-hidden="true"></i>
+    <h2>Follow the place</h2>
+    <p>Move a map with the narrative and connect people, events, and locations.</p>
+  </article>
+  <article>
+    <i class="fa-solid fa-circle-play" aria-hidden="true"></i>
+    <h2>Keep media in context</h2>
+    <p>Cue video and linked sources at the moment they matter to the story.</p>
+  </article>
+</section>
+
+<section class="project-fit">
+  <div class="project-section-heading">
+    <p class="project-kicker">Stories with something to explore</p>
+    <h2>Built for subjects that benefit from context.</h2>
+    <p>Entreluma is useful when readers need to move between an explanation and the evidence behind it—not just scroll past a gallery of media.</p>
+  </div>
+  <div class="project-fit-grid">
+    <article>
+      <h3>Collections and exhibits</h3>
+      <p>Interpret artworks, photographs, documents, and artifacts while keeping the object close to the narrative.</p>
+    </article>
+    <article>
+      <h3>Places and journeys</h3>
+      <p>Connect a story to locations, routes, and changing viewpoints without separating the map from the reading experience.</p>
+    </article>
+    <article>
+      <h3>Research and teaching</h3>
+      <p>Bring sources, observations, and media together in an explorable account that can be shared on the open web.</p>
+    </article>
+  </div>
+</section>
+
+<section class="project-principles">
+  <div class="project-section-heading">
+    <p class="project-kicker">Small by design</p>
+    <h2>Simple infrastructure. Stories made to last.</h2>
+    <p>Entreluma follows a minimal computing philosophy: use open formats, keep the technical footprint small, and add complexity only when it serves the story.</p>
+  </div>
+  <div class="project-principles-grid">
+    <article>
+      <h3>Free and open source</h3>
+      <p>Use, study, adapt, and extend the framework without a license fee or a proprietary publishing platform.</p>
+    </article>
+    <article>
+      <h3>Ready in five minutes</h3>
+      <p>Create a working site in about five minutes, then shape it gradually around your subject and audience.</p>
+    </article>
+    <article>
+      <h3>Fewer moving parts</h3>
+      <p>Static publishing needs no database or always-on application, making a site easier to maintain, move, and preserve.</p>
+    </article>
+    <article>
+      <h3>Extensible when needed</h3>
+      <p>Start with the included viewers and layouts, then add ordinary web technologies as the project grows.</p>
+    </article>
+    <article>
+      <h3>Mobile friendly from the start</h3>
+      <p>Responsive layouts adapt the story, navigation, and interactive viewers for phones, tablets, and larger screens.</p>
+    </article>
+  </div>
+</section>
+
+<section class="project-workflow">
+  <div>
+    <p class="project-kicker">A familiar publishing workflow</p>
+    <h2>A simple path from draft to site.</h2>
+  </div>
+  <div class="project-workflow-copy">
+    <p>Work in any text editor, or use the optional <a href="https://editor.entreluma.org">Entreluma Editor</a> for a live preview as you build the story.</p>
+    <ol class="project-steps">
+      <li>
+        <span aria-hidden="true">1</span>
+        <div><h3>Write</h3><p>Start with Markdown so the words remain readable, portable, and easy to revise.</p></div>
+      </li>
+      <li>
+        <span aria-hidden="true">2</span>
+        <div><h3>Enrich</h3><p>Add an image, map, comparison, video, or source where it helps the reader understand. Each interactive viewer takes a <a href="{{ '/admin/entreluma-viewers-overview' | relative_url }}">single, simple include tag</a> placed directly in the Markdown—describe what to show, and Entreluma handles the presentation.</p></div>
+      </li>
+      <li>
+        <span aria-hidden="true">3</span>
+        <div><h3>Publish</h3><p>Turn the story into a website you can share, while keeping the content in your own project.</p></div>
+      </li>
+    </ol>
+  </div>
+</section>
+
+<section class="project-examples-callout">
+  <div>
+    <p class="project-kicker">Working examples</p>
+    <h2>See Entreluma in action</h2>
+    <p>Explore stories built with the same structure included in every Entreluma site. Each example shows a different way to bring narrative and media together.</p>
+  </div>
+  <a class="project-action project-action-primary" href="{{ '/examples/' | relative_url }}">Browse examples</a>
+</section>

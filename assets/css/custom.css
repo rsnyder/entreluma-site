@@ -14,3 +14,313 @@
 #sidebar #avatar img:hover {
   transform: none;
 }
+
+/* Project homepage: a light treatment on top of the standard Entreluma home layout. */
+.project-intro {
+  margin-bottom: 2.5rem;
+  padding: clamp(1.5rem, 4vw, 2.75rem);
+  border: 1px solid var(--main-border-color);
+  border-radius: 1rem;
+  background:
+    linear-gradient(120deg, rgba(104, 184, 174, 0.13), transparent 55%),
+    var(--card-bg);
+}
+
+.project-intro h1 {
+  max-width: 720px;
+  margin: 0.35rem 0 1rem;
+  font-size: clamp(2.3rem, 6vw, 4.5rem);
+  line-height: 1.04;
+  letter-spacing: -0.04em;
+}
+
+.project-kicker {
+  margin: 0;
+  color: #397e78;
+  font-size: 0.78rem !important;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.project-lede {
+  max-width: 760px;
+  color: var(--text-muted-color);
+  line-height: 1.65;
+}
+
+.project-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  align-items: center;
+  margin: 1.5rem 0 0;
+}
+
+.project-action {
+  display: inline-flex;
+  min-height: 2.75rem;
+  align-items: center;
+  padding: 0.6rem 1rem;
+  border: 1px solid var(--main-border-color);
+  border-radius: 0.6rem;
+  color: var(--heading-color);
+  font-size: 0.9rem;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.project-action:hover {
+  border-color: #5aa69e;
+  color: var(--heading-color);
+}
+
+.project-action-primary {
+  border-color: #2f716b;
+  background: #2f716b;
+  color: #fff;
+}
+
+.project-action-primary:hover {
+  border-color: #245d58;
+  background: #245d58;
+  color: #fff;
+}
+
+.project-capabilities {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+  margin: 0 0 3rem;
+}
+
+.project-capabilities article {
+  padding: 1.25rem;
+  border-top: 3px solid #69b8ae;
+  background: var(--card-bg);
+}
+
+.project-capabilities article:nth-child(2) { border-top-color: #e4b66f; }
+.project-capabilities article:nth-child(3) { border-top-color: #8eafc8; }
+
+.project-capabilities i {
+  margin-bottom: 1rem;
+  color: var(--text-muted-color);
+  font-size: 1.2rem;
+}
+
+.project-capabilities h2 {
+  margin: 0 0 0.55rem;
+  font-size: 1.1rem;
+}
+
+.project-capabilities p {
+  margin: 0;
+  color: var(--text-muted-color);
+  font-size: 0.94rem !important;
+  line-height: 1.55;
+}
+
+.project-fit {
+  margin: 0 0 3.25rem;
+}
+
+.project-section-heading {
+  max-width: 760px;
+  margin-bottom: 1.5rem;
+}
+
+.project-section-heading h2 {
+  margin: 0.35rem 0 0.75rem;
+  font-size: clamp(1.65rem, 3.5vw, 2.5rem);
+  letter-spacing: -0.025em;
+}
+
+.project-section-heading > p:last-child {
+  margin: 0;
+  color: var(--text-muted-color);
+  line-height: 1.7;
+}
+
+.project-fit-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.5rem;
+}
+
+.project-fit-grid article {
+  padding-top: 1rem;
+  border-top: 1px solid var(--main-border-color);
+}
+
+.project-fit-grid h3 {
+  margin: 0 0 0.55rem;
+  font-size: 1rem;
+}
+
+.project-fit-grid p {
+  margin: 0;
+  color: var(--text-muted-color);
+  font-size: 0.94rem !important;
+  line-height: 1.6;
+}
+
+.project-principles {
+  margin: 0 0 3.25rem;
+  padding: clamp(1.25rem, 3vw, 2rem);
+  border: 1px solid var(--main-border-color);
+  border-radius: 1rem;
+  background:
+    linear-gradient(135deg, rgba(104, 184, 174, 0.1), transparent 60%),
+    var(--card-bg);
+}
+
+.project-principles-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem 2rem;
+}
+
+.project-principles-grid article {
+  padding-top: 1rem;
+  border-top: 1px solid var(--main-border-color);
+}
+
+.project-principles-grid article:last-child:nth-child(odd) {
+  grid-column: 1 / -1;
+}
+
+.project-principles-grid h3 {
+  margin: 0 0 0.45rem;
+  font-size: 1rem;
+}
+
+.project-principles-grid p {
+  margin: 0;
+  color: var(--text-muted-color);
+  font-size: 0.92rem !important;
+  line-height: 1.6;
+}
+
+.project-workflow {
+  display: grid;
+  grid-template-columns: minmax(220px, 0.75fr) minmax(300px, 1.25fr);
+  gap: 1.5rem;
+  align-items: start;
+  margin: 0 0 3.25rem;
+  padding: 1.5rem 0;
+  border-block: 1px solid var(--main-border-color);
+}
+
+.project-workflow h2,
+.project-examples-callout h2 {
+  margin: 0.35rem 0 0;
+  font-size: clamp(1.65rem, 3.5vw, 2.5rem);
+  letter-spacing: -0.025em;
+}
+
+.project-workflow-copy > p {
+  margin: 0;
+  color: var(--text-muted-color);
+  font-size: 1rem !important;
+  line-height: 1.7;
+}
+
+.project-steps {
+  display: grid;
+  gap: 1rem;
+  margin: 1.25rem 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.project-steps li {
+  display: grid;
+  grid-template-columns: 2rem 1fr;
+  gap: 0.8rem;
+  align-items: start;
+}
+
+.project-steps li > span {
+  display: inline-grid;
+  width: 2rem;
+  height: 2rem;
+  place-items: center;
+  border-radius: 50%;
+  background: rgba(90, 166, 158, 0.16);
+  color: #397e78;
+  font-size: 0.8rem;
+  font-weight: 750;
+}
+
+.project-steps h3 {
+  margin: 0 0 0.25rem;
+  font-size: 1rem;
+}
+
+.project-steps p {
+  margin: 0;
+  color: var(--text-muted-color);
+  font-size: 0.92rem !important;
+  line-height: 1.55;
+}
+
+.project-examples-callout {
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.5rem;
+  border: 1px solid var(--main-border-color);
+  border-radius: 1rem;
+  background: var(--card-bg);
+}
+
+.project-examples-callout h2 {
+  margin-bottom: 0.65rem;
+}
+
+.project-examples-callout p:last-child {
+  max-width: 720px;
+  margin: 0;
+  color: var(--text-muted-color);
+  font-size: 1rem !important;
+}
+
+.project-examples-callout > .project-action {
+  flex: none;
+}
+
+[data-bs-theme="dark"] .project-kicker {
+  color: #79c6bd;
+}
+
+[data-bs-theme="dark"] .project-steps li > span {
+  color: #79c6bd;
+}
+
+@media (max-width: 767px) {
+  .project-intro {
+    padding: 1.25rem;
+  }
+
+  .project-capabilities,
+  .project-fit-grid,
+  .project-principles-grid,
+  .project-workflow {
+    grid-template-columns: 1fr;
+  }
+
+  .project-principles-grid article:last-child:nth-child(odd) {
+    grid-column: auto;
+  }
+
+  .project-examples-callout {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .project-capabilities {
+    gap: 0.75rem;
+  }
+}

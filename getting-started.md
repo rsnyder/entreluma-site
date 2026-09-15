@@ -5,11 +5,15 @@ permalink: /getting-started/
 description: Create an interactive storytelling site from the Entreluma GitHub template, customize it, and publish your first Markdown story on GitHub Pages.
 ---
 
-Create your own site from the Entreluma template, then publish a story using Markdown and interactive viewers. You need a GitHub account and a repository where GitHub Pages is available.
+Entreluma is distributed as a GitHub template: a complete, working Jekyll site that you copy into your own account and customize. The template includes the theme, interactive viewers, example structure, and publishing workflow. This guide takes you from that starting point to a published first story.
 
-## 1. Create your repository
+You need a GitHub account and a repository where GitHub Pages is available. You do not need to install Entreluma before you begin.
 
-Use [the Entreluma template](https://github.com/rsnyder/entreluma/generate) to create a repository under your account. Choose a name for your project. A public repository is the simplest starting point for GitHub Pages.
+## 1. Make your own copy
+
+First, choose a short repository name for your project. A public repository is the simplest starting point for GitHub Pages.
+
+When you are ready, [create a repository from the Entreluma template](https://github.com/rsnyder/entreluma/generate). That link opens GitHub’s template form, where you can select the owner and repository name before anything is created. The resulting repository is your site: its Markdown, media, configuration, and publishing history remain under your control.
 
 ## 2. Enable GitHub Pages
 
@@ -37,4 +41,4 @@ Use GitHub’s web interface or any Markdown editor. The optional [Entreluma Edi
 
 ## Help readers find your work
 
-Give each story a useful title and description, link to it from your homepage, and submit your site’s `sitemap.xml` through Google Search Console. Set up a custom domain in your repository’s Pages settings if you want one.
+Give each story a useful title and description; published posts appear automatically on the Examples page. Submit your site’s `sitemap.xml` through Google Search Console, and set up a custom domain in your repository’s Pages settings if you want one.
