@@ -14,7 +14,7 @@ Entreluma grew from the interactive storytelling work of [Juncture](https://labs
 
 - [Entreluma template](https://github.com/rsnyder/entreluma): create an independent site with neutral defaults and an example story.
 - [This project website](https://github.com/rsnyder/entreluma-site): learn about Entreluma and explore its publishing capabilities.
-- [Entreluma Editor](https://github.com/rsnyder/entreluma-editor): an optional browser application for writing, previewing, and syncing stories with GitHub.
+- [Entreluma Editor](https://editor.entreluma.org): an optional browser application for writing, previewing, and syncing stories with GitHub.
 
 Your published site is a static website. The editor is optional, and your stories remain in your repository.
 
